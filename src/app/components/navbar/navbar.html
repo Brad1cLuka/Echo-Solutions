@@ -1,23 +1,66 @@
-<nav class="fixed top-0 left-0 w-full z-50 px-6 py-4">
+<nav class="fixed top-0 left-0 w-full z-50 px-4 sm:px-6 py-4">
 
-  <div class="max-w-7xl mx-auto flex items-center justify-between rounded-full border border-white/10 bg-[#050816]/70 backdrop-blur-xl px-6 py-3 shadow-2xl">
+  <div class="max-w-7xl mx-auto flex items-center justify-between rounded-full border border-white/10 bg-[#050816]/70 backdrop-blur-xl px-4 sm:px-6 py-3 shadow-2xl">
 
     <!-- LOGO -->
-    <a href="#home" class="flex items-center">
+    <a href="#home" class="flex items-center shrink-0">
       <img
         src="/assets/logos/es_logo.png"
         alt="Echo Solutions"
-        class="h-16 w-auto object-contain drop-shadow-[0_0_18px_rgba(34,211,238,0.45)] hover:scale-105 transition duration-300"
+        class="h-12 sm:h-16 w-auto object-contain drop-shadow-[0_0_18px_rgba(34,211,238,0.45)] hover:scale-105 transition duration-300"
       />
     </a>
 
-    <!-- DESKTOP -->
+    <!-- DESKTOP NAV -->
     <div class="hidden md:flex items-center gap-8 text-sm text-gray-300">
 
-      <a href="#services" class="hover:text-cyan-300 transition">Services</a>
-      <a href="#projects" class="hover:text-cyan-300 transition">Projects</a>
-      <a href="#about" class="hover:text-cyan-300 transition">About</a>
-      <a href="#contact" class="hover:text-cyan-300 transition">Contact</a>
+      <a
+        href="#services"
+        class="relative pb-2 hover:text-cyan-300 transition duration-300
+        after:content-[''] after:absolute after:left-1/2 after:bottom-0
+        after:w-0 after:h-[2px] after:bg-cyan-400 after:rounded-full
+        after:-translate-x-1/2 after:transition-all after:duration-300
+        after:opacity-0 after:shadow-[0_0_10px_rgba(34,211,238,0.9)]
+        hover:after:w-full hover:after:opacity-100"
+      >
+        Services
+      </a>
+
+      <a
+        href="#projects"
+        class="relative pb-2 hover:text-cyan-300 transition duration-300
+        after:content-[''] after:absolute after:left-1/2 after:bottom-0
+        after:w-0 after:h-[2px] after:bg-cyan-400 after:rounded-full
+        after:-translate-x-1/2 after:transition-all after:duration-300
+        after:opacity-0 after:shadow-[0_0_10px_rgba(34,211,238,0.9)]
+        hover:after:w-full hover:after:opacity-100"
+      >
+        Projects
+      </a>
+
+      <a
+        href="#about"
+        class="relative pb-2 hover:text-cyan-300 transition duration-300
+        after:content-[''] after:absolute after:left-1/2 after:bottom-0
+        after:w-0 after:h-[2px] after:bg-cyan-400 after:rounded-full
+        after:-translate-x-1/2 after:transition-all after:duration-300
+        after:opacity-0 after:shadow-[0_0_10px_rgba(34,211,238,0.9)]
+        hover:after:w-full hover:after:opacity-100"
+      >
+        About
+      </a>
+
+      <a
+        href="#contact"
+        class="relative pb-2 hover:text-cyan-300 transition duration-300
+        after:content-[''] after:absolute after:left-1/2 after:bottom-0
+        after:w-0 after:h-[2px] after:bg-cyan-400 after:rounded-full
+        after:-translate-x-1/2 after:transition-all after:duration-300
+        after:opacity-0 after:shadow-[0_0_10px_rgba(34,211,238,0.9)]
+        hover:after:w-full hover:after:opacity-100"
+      >
+        Contact
+      </a>
 
     </div>
 
@@ -43,21 +86,72 @@
   <!-- MOBILE MENU -->
   <div
     *ngIf="menuOpen"
-    class="md:hidden mt-4 mx-6 rounded-2xl border border-white/10 bg-[#050816]/95 backdrop-blur-xl p-6 space-y-4 text-center"
+    class="md:hidden mt-4 mx-2 rounded-2xl border border-white/10 bg-[#050816]/95 backdrop-blur-xl p-6"
   >
 
-    <a (click)="closeMenu()" href="#services" class="block text-gray-300 hover:text-cyan-300">Services</a>
-    <a (click)="closeMenu()" href="#projects" class="block text-gray-300 hover:text-cyan-300">Projects</a>
-    <a (click)="closeMenu()" href="#about" class="block text-gray-300 hover:text-cyan-300">About</a>
-    <a (click)="closeMenu()" href="#contact" class="block text-gray-300 hover:text-cyan-300">Contact</a>
+    <div class="flex flex-col items-center gap-5">
 
-    <a
-      (click)="closeMenu()"
-      href="#contact"
-      class="block bg-cyan-400 text-black px-5 py-3 rounded-full font-semibold hover:shadow-[0_0_20px_rgba(34,211,238,0.6)]"
-    >
-      Start Project
-    </a>
+      <a
+        (click)="closeMenu()"
+        href="#services"
+        class="relative block w-fit pb-2 text-gray-300 hover:text-cyan-300 transition duration-300
+        after:content-[''] after:absolute after:left-1/2 after:bottom-0
+        after:w-0 after:h-[2px] after:bg-cyan-400 after:rounded-full
+        after:-translate-x-1/2 after:transition-all after:duration-300
+        after:opacity-0 after:shadow-[0_0_10px_rgba(34,211,238,0.9)]
+        hover:after:w-full hover:after:opacity-100"
+      >
+        Services
+      </a>
+
+      <a
+        (click)="closeMenu()"
+        href="#projects"
+        class="relative block w-fit pb-2 text-gray-300 hover:text-cyan-300 transition duration-300
+        after:content-[''] after:absolute after:left-1/2 after:bottom-0
+        after:w-0 after:h-[2px] after:bg-cyan-400 after:rounded-full
+        after:-translate-x-1/2 after:transition-all after:duration-300
+        after:opacity-0 after:shadow-[0_0_10px_rgba(34,211,238,0.9)]
+        hover:after:w-full hover:after:opacity-100"
+      >
+        Projects
+      </a>
+
+      <a
+        (click)="closeMenu()"
+        href="#about"
+        class="relative block w-fit pb-2 text-gray-300 hover:text-cyan-300 transition duration-300
+        after:content-[''] after:absolute after:left-1/2 after:bottom-0
+        after:w-0 after:h-[2px] after:bg-cyan-400 after:rounded-full
+        after:-translate-x-1/2 after:transition-all after:duration-300
+        after:opacity-0 after:shadow-[0_0_10px_rgba(34,211,238,0.9)]
+        hover:after:w-full hover:after:opacity-100"
+      >
+        About
+      </a>
+
+      <a
+        (click)="closeMenu()"
+        href="#contact"
+        class="relative block w-fit pb-2 text-gray-300 hover:text-cyan-300 transition duration-300
+        after:content-[''] after:absolute after:left-1/2 after:bottom-0
+        after:w-0 after:h-[2px] after:bg-cyan-400 after:rounded-full
+        after:-translate-x-1/2 after:transition-all after:duration-300
+        after:opacity-0 after:shadow-[0_0_10px_rgba(34,211,238,0.9)]
+        hover:after:w-full hover:after:opacity-100"
+      >
+        Contact
+      </a>
+
+      <a
+        (click)="closeMenu()"
+        href="#contact"
+        class="mt-2 block bg-cyan-400 text-black px-5 py-3 rounded-full font-semibold hover:shadow-[0_0_20px_rgba(34,211,238,0.6)] transition"
+      >
+        Start Project
+      </a>
+
+    </div>
 
   </div>
 
