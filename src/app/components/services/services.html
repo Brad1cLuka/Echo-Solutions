@@ -5,15 +5,17 @@
   <div class="max-w-7xl mx-auto relative z-10">
 
     <div class="mb-16">
-      <p class="text-cyan-400 mb-3 text-lg">Our Services</p>
+      <p class="text-cyan-400 mb-3 text-lg">
+        {{ 'SERVICES.SUBTITLE' | translate }}
+      </p>
 
       <h2 class="text-4xl lg:text-5xl font-bold mb-5 leading-tight">
-        Web solutions designed <br>
-        for growth and credibility.
+        {{ 'SERVICES.TITLE_LINE1' | translate }} <br>
+        {{ 'SERVICES.TITLE_LINE2' | translate }}
       </h2>
 
       <p class="text-gray-400 max-w-2xl text-lg leading-relaxed">
-        Echo Solutions builds premium websites and scalable web applications for businesses, startups and online brands.
+        {{ 'SERVICES.DESCRIPTION' | translate }}
       </p>
     </div>
 
@@ -26,7 +28,7 @@
       >
 
         <div class="absolute top-0 right-0 bg-cyan-400 text-black px-5 py-2 text-xs font-bold rounded-bl-2xl shadow-lg">
-          LIMITED OFFER
+          {{ 'SERVICES.CARD1.BADGE' | translate }}
         </div>
 
         <div class="w-14 h-14 rounded-2xl bg-cyan-400/10 flex items-center justify-center mb-6 text-cyan-300 text-2xl">
@@ -34,44 +36,42 @@
         </div>
 
         <h3 class="text-2xl font-semibold mb-4">
-          Presentation Websites
+          {{ 'SERVICES.CARD1.TITLE' | translate }}
         </h3>
 
         <p class="text-gray-400 leading-relaxed mb-6">
-          Modern business websites and landing pages designed to build trust and attract clients.
+          {{ 'SERVICES.CARD1.DESCRIPTION' | translate }}
         </p>
 
         <ul class="space-y-3 text-gray-300 text-sm mb-8">
-          <li>✔ Responsive design</li>
-          <li>✔ Up to 5 custom pages</li>
-          <li>✔ Contact forms</li>
-          <li>✔ SEO optimized</li>
-          <li>✔ Fast loading speed</li>
+          <li>✔ {{ 'SERVICES.CARD1.FEATURE1' | translate }}</li>
+          <li>✔ {{ 'SERVICES.CARD1.FEATURE2' | translate }}</li>
+          <li>✔ {{ 'SERVICES.CARD1.FEATURE3' | translate }}</li>
+          <li>✔ {{ 'SERVICES.CARD1.FEATURE4' | translate }}</li>
+          <li>✔ {{ 'SERVICES.CARD1.FEATURE5' | translate }}</li>
         </ul>
 
         <div class="mb-6">
-
           <p class="text-gray-500 line-through text-lg mb-1">
-            Starting at €300
+            {{ 'SERVICES.CARD1.OLD_PRICE' | translate }}
           </p>
 
           <div class="flex items-end gap-2">
-            <span class="text-cyan-300 text-4xl font-bold drop-shadow-[0_0_12px_rgba(34,211,238,0.45)]">
-              €200
+            <span class="text-cyan-300 text-4xl font-bold">
+              {{ 'SERVICES.CARD1.PRICE' | translate }}
             </span>
 
             <span class="text-gray-400 mb-1">
-              limited offer
+              {{ 'SERVICES.CARD1.OFFER' | translate }}
             </span>
           </div>
-
         </div>
 
         <button
           onclick="document.getElementById('modal1').classList.remove('hidden')"
           class="w-full border border-cyan-400/20 text-cyan-300 py-3 rounded-2xl hover:bg-cyan-400 hover:text-black transition duration-300"
         >
-          Learn More
+          {{ 'SERVICES.CARD1.BUTTON' | translate }}
         </button>
 
       </div>
@@ -84,7 +84,7 @@
       >
 
         <div class="absolute top-0 right-0 px-4 py-2 bg-cyan-400 text-black text-xs font-bold rounded-bl-2xl">
-          MOST POPULAR
+          {{ 'SERVICES.CARD2.BADGE' | translate }}
         </div>
 
         <div class="w-14 h-14 rounded-2xl bg-cyan-400/10 flex items-center justify-center mb-6 text-cyan-300 text-2xl">
@@ -92,24 +92,24 @@
         </div>
 
         <h3 class="text-2xl font-semibold mb-4">
-          Business Web Applications
+          {{ 'SERVICES.CARD2.TITLE' | translate }}
         </h3>
 
         <p class="text-gray-400 leading-relaxed mb-6">
-          Custom platforms and systems with backend logic, authentication and database integration.
+          {{ 'SERVICES.CARD2.DESCRIPTION' | translate }}
         </p>
 
         <ul class="space-y-3 text-gray-300 text-sm mb-8">
-          <li>✔ Admin dashboards</li>
-          <li>✔ Authentication system</li>
-          <li>✔ Database integration</li>
-          <li>✔ API development</li>
-          <li>✔ Scalable architecture</li>
+          <li>✔ {{ 'SERVICES.CARD2.FEATURE1' | translate }}</li>
+          <li>✔ {{ 'SERVICES.CARD2.FEATURE2' | translate }}</li>
+          <li>✔ {{ 'SERVICES.CARD2.FEATURE3' | translate }}</li>
+          <li>✔ {{ 'SERVICES.CARD2.FEATURE4' | translate }}</li>
+          <li>✔ {{ 'SERVICES.CARD2.FEATURE5' | translate }}</li>
         </ul>
 
         <div class="mb-6">
-          <span class="text-cyan-300 text-4xl font-bold drop-shadow-[0_0_12px_rgba(34,211,238,0.45)]">
-            From €800
+          <span class="text-cyan-300 text-4xl font-bold">
+            {{ 'SERVICES.CARD2.PRICE' | translate }}
           </span>
         </div>
 
@@ -117,7 +117,7 @@
           onclick="document.getElementById('modal2').classList.remove('hidden')"
           class="w-full border border-cyan-400/20 text-cyan-300 py-3 rounded-2xl hover:bg-cyan-400 hover:text-black transition duration-300"
         >
-          Learn More
+          {{ 'SERVICES.CARD2.BUTTON' | translate }}
         </button>
 
       </div>
@@ -134,24 +134,24 @@
         </div>
 
         <h3 class="text-2xl font-semibold mb-4">
-          E-Commerce & SaaS Platforms
+          {{ 'SERVICES.CARD3.TITLE' | translate }}
         </h3>
 
         <p class="text-gray-400 leading-relaxed mb-6">
-          Full-featured online stores and SaaS platforms built for scaling, automation and long-term growth.
+          {{ 'SERVICES.CARD3.DESCRIPTION' | translate }}
         </p>
 
         <ul class="space-y-3 text-gray-300 text-sm mb-8">
-          <li>✔ Payment integrations</li>
-          <li>✔ User accounts</li>
-          <li>✔ Subscription systems</li>
-          <li>✔ Product management</li>
-          <li>✔ Analytics & optimization</li>
+          <li>✔ {{ 'SERVICES.CARD3.FEATURE1' | translate }}</li>
+          <li>✔ {{ 'SERVICES.CARD3.FEATURE2' | translate }}</li>
+          <li>✔ {{ 'SERVICES.CARD3.FEATURE3' | translate }}</li>
+          <li>✔ {{ 'SERVICES.CARD3.FEATURE4' | translate }}</li>
+          <li>✔ {{ 'SERVICES.CARD3.FEATURE5' | translate }}</li>
         </ul>
 
         <div class="mb-6">
-          <span class="text-cyan-300 text-4xl font-bold drop-shadow-[0_0_12px_rgba(34,211,238,0.45)]">
-            From €1500
+          <span class="text-cyan-300 text-4xl font-bold">
+            {{ 'SERVICES.CARD3.PRICE' | translate }}
           </span>
         </div>
 
@@ -159,120 +159,11 @@
           onclick="document.getElementById('modal3').classList.remove('hidden')"
           class="w-full border border-cyan-400/20 text-cyan-300 py-3 rounded-2xl hover:bg-cyan-400 hover:text-black transition duration-300"
         >
-          Learn More
+          {{ 'SERVICES.CARD3.BUTTON' | translate }}
         </button>
 
       </div>
 
     </div>
-
   </div>
 </section>
-
-<!-- MODAL 1 -->
-<div id="modal1" class="hidden fixed inset-0 z-[999] bg-black/70 backdrop-blur-sm flex items-center justify-center px-6">
-
-  <div class="bg-[#0B1120] border border-cyan-400/20 rounded-3xl p-8 max-w-2xl w-full relative">
-
-    <button
-      onclick="document.getElementById('modal1').classList.add('hidden')"
-      class="absolute top-5 right-5 text-gray-400 hover:text-white text-2xl"
-    >
-      ✕
-    </button>
-
-    <h3 class="text-3xl font-bold mb-5 text-cyan-300">
-      Presentation Websites
-    </h3>
-
-    <p class="text-gray-300 leading-relaxed mb-6">
-      A professional website builds trust, improves credibility and helps your business attract more customers online. Modern presentation websites are perfect for restaurants, cafes, salons, agencies and local businesses that want a strong online presence.
-    </p>
-
-    <p class="text-gray-400 leading-relaxed mb-8">
-      Echo Solutions creates responsive, modern and fast-loading websites optimized for mobile devices and SEO, helping businesses stand out and convert visitors into clients.
-    </p>
-
-    <a
-      href="#contact"
-      onclick="document.getElementById('modal1').classList.add('hidden')"
-      class="inline-block bg-cyan-400 text-black px-6 py-3 rounded-2xl font-semibold hover:scale-105 transition"
-    >
-      Contact Now
-    </a>
-
-  </div>
-
-</div>
-
-<!-- MODAL 2 -->
-<div id="modal2" class="hidden fixed inset-0 z-[999] bg-black/70 backdrop-blur-sm flex items-center justify-center px-6">
-
-  <div class="bg-[#0B1120] border border-cyan-400/20 rounded-3xl p-8 max-w-2xl w-full relative">
-
-    <button
-      onclick="document.getElementById('modal2').classList.add('hidden')"
-      class="absolute top-5 right-5 text-gray-400 hover:text-white text-2xl"
-    >
-      ✕
-    </button>
-
-    <h3 class="text-3xl font-bold mb-5 text-cyan-300">
-      Business Web Applications
-    </h3>
-
-    <p class="text-gray-300 leading-relaxed mb-6">
-      Custom business applications automate processes, improve productivity and help companies manage clients, products and workflows more efficiently.
-    </p>
-
-    <p class="text-gray-400 leading-relaxed mb-8">
-      From dashboards and admin systems to authentication and databases, Echo Solutions develops scalable platforms tailored specifically for your business goals.
-    </p>
-
-    <a
-      href="#contact"
-      onclick="document.getElementById('modal2').classList.add('hidden')"
-      class="inline-block bg-cyan-400 text-black px-6 py-3 rounded-2xl font-semibold hover:scale-105 transition"
-    >
-      Contact Now
-    </a>
-
-  </div>
-
-</div>
-
-<!-- MODAL 3 -->
-<div id="modal3" class="hidden fixed inset-0 z-[999] bg-black/70 backdrop-blur-sm flex items-center justify-center px-6">
-
-  <div class="bg-[#0B1120] border border-cyan-400/20 rounded-3xl p-8 max-w-2xl w-full relative">
-
-    <button
-      onclick="document.getElementById('modal3').classList.add('hidden')"
-      class="absolute top-5 right-5 text-gray-400 hover:text-white text-2xl"
-    >
-      ✕
-    </button>
-
-    <h3 class="text-3xl font-bold mb-5 text-cyan-300">
-      E-Commerce & SaaS Platforms
-    </h3>
-
-    <p class="text-gray-300 leading-relaxed mb-6">
-      Modern ecommerce stores and SaaS platforms allow businesses to scale online, automate sales and provide digital services to customers worldwide.
-    </p>
-
-    <p class="text-gray-400 leading-relaxed mb-8">
-      Echo Solutions develops secure, scalable and high-performance systems with subscriptions, payments, user accounts and custom management panels.
-    </p>
-
-    <a
-      href="#contact"
-      onclick="document.getElementById('modal3').classList.add('hidden')"
-      class="inline-block bg-cyan-400 text-black px-6 py-3 rounded-2xl font-semibold hover:scale-105 transition"
-    >
-      Contact Now
-    </a>
-
-  </div>
-
-</div>

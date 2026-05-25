@@ -7,18 +7,18 @@
 
     <div class="relative z-10">
 
-      <p class="text-cyan-400 mb-3">Let’s build something</p>
+      <p class="text-cyan-400 mb-3">
+        {{ 'CONTACT.SUBTITLE' | translate }}
+      </p>
 
       <h2 class="text-4xl lg:text-6xl font-bold mb-6">
-        Ready to launch your next website?
+        {{ 'CONTACT.TITLE' | translate }}
       </h2>
 
       <p class="text-gray-400 max-w-2xl mx-auto mb-8">
-        Tell us about your idea and we’ll help turn it into a modern, responsive and high-performing web experience.
+        {{ 'CONTACT.DESCRIPTION' | translate }}
       </p>
 
-
-      
       <button
         type="button"
         (click)="openContactModal()"
@@ -28,7 +28,7 @@
         hover:drop-shadow-[0_0_10px_rgba(34,211,238,0.8)]
         hover:bg-cyan-300"
       >
-        Contact Echo Solutions
+        {{ 'CONTACT.BUTTON' | translate }}
       </button>
 
     </div>
@@ -56,7 +56,7 @@
     </button>
 
     <h2 class="text-3xl font-bold mb-6 text-cyan-300">
-      Contact Us
+      {{ 'CONTACT.MODAL_TITLE' | translate }}
     </h2>
 
     <!-- FORM -->
@@ -72,7 +72,7 @@
         ngModel
         required
         type="text"
-        placeholder="Your name"
+        placeholder="{{ 'CONTACT.NAME' | translate }}"
         class="w-full px-5 py-3 rounded-2xl bg-white/5 border border-white/10 text-white outline-none focus:border-cyan-400/50"
       />
 
@@ -83,23 +83,23 @@
         required
         email
         type="email"
-        placeholder="Your email"
+        placeholder="{{ 'CONTACT.EMAIL' | translate }}"
         class="w-full px-5 py-3 rounded-2xl bg-white/5 border border-white/10 text-white outline-none focus:border-cyan-400/50"
       />
 
-      <!-- TYPE (FIXED COLOR ISSUE) -->
+      <!-- TYPE -->
       <select
         name="type"
         ngModel
         required
         class="w-full px-5 py-3 rounded-2xl bg-[#0B1120] border border-white/10 text-white outline-none focus:border-cyan-400/50"
       >
-        <option value="">Select inquiry type</option>
-        <option>Question</option>
-        <option>Business Inquiry</option>
-        <option>Need a Website</option>
-        <option>SaaS / App</option>
-        <option>Job / Collaboration</option>
+        <option value="">{{ 'CONTACT.SELECT_TYPE' | translate }}</option>
+        <option>{{ 'CONTACT.TYPE1' | translate }}</option>
+        <option>{{ 'CONTACT.TYPE2' | translate }}</option>
+        <option>{{ 'CONTACT.TYPE3' | translate }}</option>
+        <option>{{ 'CONTACT.TYPE4' | translate }}</option>
+        <option>{{ 'CONTACT.TYPE5' | translate }}</option>
       </select>
 
       <!-- MESSAGE -->
@@ -108,7 +108,7 @@
         ngModel
         required
         rows="5"
-        placeholder="Message"
+        placeholder="{{ 'CONTACT.MESSAGE' | translate }}"
         class="w-full px-5 py-3 rounded-2xl bg-white/5 border border-white/10 text-white outline-none focus:border-cyan-400/50"
       ></textarea>
 
@@ -121,11 +121,13 @@
         disabled:opacity-50 disabled:cursor-not-allowed"
       >
 
-        <span *ngIf="!loading">Send Message</span>
+        <span *ngIf="!loading">
+          {{ 'CONTACT.SEND' | translate }}
+        </span>
 
         <span *ngIf="loading" class="flex items-center justify-center gap-2">
           <div class="w-4 h-4 border-2 border-black border-t-transparent rounded-full animate-spin"></div>
-          Sending message...
+          {{ 'CONTACT.SENDING' | translate }}
         </span>
 
       </button>
@@ -152,11 +154,11 @@
     </button>
 
     <h2 class="text-2xl font-bold text-cyan-300 mb-4">
-      Message Sent Successfully
+      {{ 'CONTACT.SUCCESS_TITLE' | translate }}
     </h2>
 
     <p class="text-gray-400">
-      We’ll get back to you as soon as possible.
+      {{ 'CONTACT.SUCCESS_DESC' | translate }}
     </p>
 
   </div>

@@ -14,63 +14,86 @@
     <!-- DESKTOP NAV -->
     <div class="hidden md:flex items-center gap-8 text-sm text-gray-300">
 
-      <a
-        href="#services"
-        class="relative pb-2 hover:text-cyan-300 transition duration-300
-        after:content-[''] after:absolute after:left-1/2 after:bottom-0
-        after:w-0 after:h-[2px] after:bg-cyan-400 after:rounded-full
-        after:-translate-x-1/2 after:transition-all after:duration-300
-        after:opacity-0 after:shadow-[0_0_10px_rgba(34,211,238,0.9)]
-        hover:after:w-full hover:after:opacity-100"
-      >
-        Services
+      <a href="#services"
+         class="relative pb-2 hover:text-cyan-300 transition duration-300
+         after:content-[''] after:absolute after:left-1/2 after:bottom-0
+         after:w-0 after:h-[2px] after:bg-cyan-400 after:rounded-full
+         after:-translate-x-1/2 after:transition-all after:duration-300
+         after:opacity-0 after:shadow-[0_0_10px_rgba(34,211,238,0.9)]
+         hover:after:w-full hover:after:opacity-100">
+        {{ 'NAV.SERVICES' | translate }}
       </a>
 
-      <a
-        href="#projects"
-        class="relative pb-2 hover:text-cyan-300 transition duration-300
-        after:content-[''] after:absolute after:left-1/2 after:bottom-0
-        after:w-0 after:h-[2px] after:bg-cyan-400 after:rounded-full
-        after:-translate-x-1/2 after:transition-all after:duration-300
-        after:opacity-0 after:shadow-[0_0_10px_rgba(34,211,238,0.9)]
-        hover:after:w-full hover:after:opacity-100"
-      >
-        Projects
+      <a href="#projects"
+         class="relative pb-2 hover:text-cyan-300 transition duration-300
+         after:content-[''] after:absolute after:left-1/2 after:bottom-0
+         after:w-0 after:h-[2px] after:bg-cyan-400 after:rounded-full
+         after:-translate-x-1/2 after:transition-all after:duration-300
+         after:opacity-0 after:shadow-[0_0_10px_rgba(34,211,238,0.9)]
+         hover:after:w-full hover:after:opacity-100">
+        {{ 'NAV.PROJECTS' | translate }}
       </a>
 
-      <a
-        href="#about"
-        class="relative pb-2 hover:text-cyan-300 transition duration-300
-        after:content-[''] after:absolute after:left-1/2 after:bottom-0
-        after:w-0 after:h-[2px] after:bg-cyan-400 after:rounded-full
-        after:-translate-x-1/2 after:transition-all after:duration-300
-        after:opacity-0 after:shadow-[0_0_10px_rgba(34,211,238,0.9)]
-        hover:after:w-full hover:after:opacity-100"
-      >
-        About
+      <a href="#about"
+         class="relative pb-2 hover:text-cyan-300 transition duration-300
+         after:content-[''] after:absolute after:left-1/2 after:bottom-0
+         after:w-0 after:h-[2px] after:bg-cyan-400 after:rounded-full
+         after:-translate-x-1/2 after:transition-all after:duration-300
+         after:opacity-0 after:shadow-[0_0_10px_rgba(34,211,238,0.9)]
+         hover:after:w-full hover:after:opacity-100">
+        {{ 'NAV.ABOUT' | translate }}
       </a>
 
-      <a
-        href="#contact"
-        class="relative pb-2 hover:text-cyan-300 transition duration-300
-        after:content-[''] after:absolute after:left-1/2 after:bottom-0
-        after:w-0 after:h-[2px] after:bg-cyan-400 after:rounded-full
-        after:-translate-x-1/2 after:transition-all after:duration-300
-        after:opacity-0 after:shadow-[0_0_10px_rgba(34,211,238,0.9)]
-        hover:after:w-full hover:after:opacity-100"
-      >
-        Contact
+      <a href="#contact"
+         class="relative pb-2 hover:text-cyan-300 transition duration-300
+         after:content-[''] after:absolute after:left-1/2 after:bottom-0
+         after:w-0 after:h-[2px] after:bg-cyan-400 after:rounded-full
+         after:-translate-x-1/2 after:transition-all after:duration-300
+         after:opacity-0 after:shadow-[0_0_10px_rgba(34,211,238,0.9)]
+         hover:after:w-full hover:after:opacity-100">
+        {{ 'NAV.CONTACT' | translate }}
       </a>
 
     </div>
 
-    <!-- CTA -->
+    <!-- CTA (NOW LEFT SIDE OF SWAP) -->
     <a
       href="#contact"
-      class="hidden md:block bg-cyan-400 text-black px-5 py-2 rounded-full text-sm font-semibold hover:scale-105 hover:shadow-[0_0_25px_rgba(34,211,238,0.7)] transition"
+      class="hidden md:block
+      bg-cyan-400 text-black px-5 py-2 rounded-full text-sm font-semibold
+      transition duration-300
+      hover:scale-105
+      hover:bg-cyan-300
+      hover:shadow-[0_0_20px_rgba(34,211,238,0.6)]
+      hover:drop-shadow-[0_0_10px_rgba(34,211,238,0.8)]"
     >
-      Start Project
+      {{ 'NAV.START_PROJECT' | translate }}
     </a>
+
+    <!-- LANGUAGE SWITCH (NOW RIGHT SIDE OF SWAP) -->
+    <div class="hidden md:flex items-center gap-4 text-xs text-gray-300">
+
+      <!-- SRB -->
+      <button
+        (click)="switchLanguage('sr')"
+        class="flex items-center gap-2 hover:text-cyan-300 transition"
+      >
+        <img src="assets/flags/rs.svg" class="w-5 h-5 rounded-sm" alt="SRB" />
+        <span>SRB</span>
+      </button>
+
+      <span class="text-gray-500">|</span>
+
+      <!-- ENG -->
+      <button
+        (click)="switchLanguage('en')"
+        class="flex items-center gap-2 hover:text-cyan-300 transition"
+      >
+        <span>ENG</span>
+        <img src="assets/flags/gb.svg" class="w-5 h-5 rounded-sm" alt="ENG" />
+      </button>
+
+    </div>
 
     <!-- HAMBURGER -->
     <button
@@ -91,65 +114,32 @@
 
     <div class="flex flex-col items-center gap-5">
 
-      <a
-        (click)="closeMenu()"
-        href="#services"
-        class="relative block w-fit pb-2 text-gray-300 hover:text-cyan-300 transition duration-300
-        after:content-[''] after:absolute after:left-1/2 after:bottom-0
-        after:w-0 after:h-[2px] after:bg-cyan-400 after:rounded-full
-        after:-translate-x-1/2 after:transition-all after:duration-300
-        after:opacity-0 after:shadow-[0_0_10px_rgba(34,211,238,0.9)]
-        hover:after:w-full hover:after:opacity-100"
-      >
-        Services
+      <a (click)="closeMenu()" href="#services">
+        {{ 'NAV.SERVICES' | translate }}
       </a>
 
-      <a
-        (click)="closeMenu()"
-        href="#projects"
-        class="relative block w-fit pb-2 text-gray-300 hover:text-cyan-300 transition duration-300
-        after:content-[''] after:absolute after:left-1/2 after:bottom-0
-        after:w-0 after:h-[2px] after:bg-cyan-400 after:rounded-full
-        after:-translate-x-1/2 after:transition-all after:duration-300
-        after:opacity-0 after:shadow-[0_0_10px_rgba(34,211,238,0.9)]
-        hover:after:w-full hover:after:opacity-100"
-      >
-        Projects
+      <a (click)="closeMenu()" href="#projects">
+        {{ 'NAV.PROJECTS' | translate }}
       </a>
 
-      <a
-        (click)="closeMenu()"
-        href="#about"
-        class="relative block w-fit pb-2 text-gray-300 hover:text-cyan-300 transition duration-300
-        after:content-[''] after:absolute after:left-1/2 after:bottom-0
-        after:w-0 after:h-[2px] after:bg-cyan-400 after:rounded-full
-        after:-translate-x-1/2 after:transition-all after:duration-300
-        after:opacity-0 after:shadow-[0_0_10px_rgba(34,211,238,0.9)]
-        hover:after:w-full hover:after:opacity-100"
-      >
-        About
+      <a (click)="closeMenu()" href="#about">
+        {{ 'NAV.ABOUT' | translate }}
       </a>
 
-      <a
-        (click)="closeMenu()"
-        href="#contact"
-        class="relative block w-fit pb-2 text-gray-300 hover:text-cyan-300 transition duration-300
-        after:content-[''] after:absolute after:left-1/2 after:bottom-0
-        after:w-0 after:h-[2px] after:bg-cyan-400 after:rounded-full
-        after:-translate-x-1/2 after:transition-all after:duration-300
-        after:opacity-0 after:shadow-[0_0_10px_rgba(34,211,238,0.9)]
-        hover:after:w-full hover:after:opacity-100"
-      >
-        Contact
+      <a (click)="closeMenu()" href="#contact">
+        {{ 'NAV.CONTACT' | translate }}
       </a>
 
-      <a
-        (click)="closeMenu()"
-        href="#contact"
-        class="mt-2 block bg-cyan-400 text-black px-5 py-3 rounded-full font-semibold hover:shadow-[0_0_20px_rgba(34,211,238,0.6)] transition"
-      >
-        Start Project
+      <a (click)="closeMenu()" href="#contact"
+         class="mt-2 bg-cyan-400 text-black px-5 py-3 rounded-full font-semibold">
+        {{ 'NAV.START_PROJECT' | translate }}
       </a>
+
+      <!-- MOBILE LANG -->
+      <div class="flex gap-4 text-gray-300 mt-4">
+        <button (click)="switchLanguage('sr')">SRB</button>
+        <button (click)="switchLanguage('en')">ENG</button>
+      </div>
 
     </div>
 

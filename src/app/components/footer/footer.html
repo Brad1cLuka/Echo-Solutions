@@ -6,11 +6,11 @@
     <div class="flex flex-col items-center md:items-start gap-4">
 
       <h3 class="text-white text-lg font-semibold">
-        Follow Echo Solutions
+        {{ 'FOOTER.FOLLOW_TITLE' | translate }}
       </h3>
 
       <p class="text-gray-400 text-sm text-center md:text-left">
-        Stay connected with us on social media
+        {{ 'FOOTER.FOLLOW_DESC' | translate }}
       </p>
 
       <div class="flex gap-4 text-gray-400 text-xl mt-2">
@@ -39,25 +39,25 @@
 
     </div>
 
-    <!-- CENTER (SPUŠTENO DOLJE) -->
+    <!-- CENTER -->
     <div class="flex flex-col justify-end items-center text-gray-400 text-sm min-h-[120px]">
 
       <div class="mt-auto text-center space-y-1">
-        <p>© 2026 Echo Solutions</p>
-        <p>All rights reserved</p>
-        <p>Niš, Serbia</p>
+        <p>{{ 'FOOTER.COPYRIGHT' | translate }}</p>
+        <p>{{ 'FOOTER.RIGHTS' | translate }}</p>
+        <p>{{ 'FOOTER.LOCATION' | translate }}</p>
       </div>
 
     </div>
 
-    <!-- RIGHT (NAV LINKS) -->
+    <!-- RIGHT -->
     <div class="flex flex-col items-center md:items-end gap-3 text-sm">
 
-      <a href="#home" class="text-gray-400 hover:text-cyan-300 transition">Home</a>
-      <a href="#services" class="text-gray-400 hover:text-cyan-300 transition">Services</a>
-      <a href="#projects" class="text-gray-400 hover:text-cyan-300 transition">Projects</a>
-      <a href="#about" class="text-gray-400 hover:text-cyan-300 transition">About</a>
-      <a href="#contact" class="text-gray-400 hover:text-cyan-300 transition">Contact</a>
+      <a href="#home" class="text-gray-400 hover:text-cyan-300 transition">{{ 'FOOTER.HOME' | translate }}</a>
+      <a href="#services" class="text-gray-400 hover:text-cyan-300 transition">{{ 'FOOTER.SERVICES' | translate }}</a>
+      <a href="#projects" class="text-gray-400 hover:text-cyan-300 transition">{{ 'FOOTER.PROJECTS' | translate }}</a>
+      <a href="#about" class="text-gray-400 hover:text-cyan-300 transition">{{ 'FOOTER.ABOUT' | translate }}</a>
+      <a href="#contact" class="text-gray-400 hover:text-cyan-300 transition">{{ 'FOOTER.CONTACT' | translate }}</a>
 
     </div>
 

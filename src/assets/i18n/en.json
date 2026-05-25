@@ -1,0 +1,148 @@
+{
+  "NAV": {
+    "SERVICES": "Services",
+    "PROJECTS": "Projects",
+    "ABOUT": "About",
+    "CONTACT": "Contact",
+    "START_PROJECT": "Start Project"
+  },
+  "HERO": {
+    "TAGLINE": "Modern Web Development",
+    "TITLE_LINE1": "We build",
+    "TITLE_LINE2": "modern digital",
+    "TITLE_LINE3": "experiences.",
+    "DESCRIPTION": "Echo Solutions creates high-performance websites and full-stack web applications for modern businesses and startups.",
+    "SUBTEXT": "100% Custom Code • No Templates • No WordPress",
+    "BUTTON_PROJECTS": "View Projects",
+    "BUTTON_CONTACT": "Contact"
+  
+},
+
+  "SERVICES": {
+    "SUBTITLE": "Our Services",
+    "TITLE_LINE1": "Web solutions designed",
+    "TITLE_LINE2": "for growth and credibility.",
+    "DESCRIPTION": "Echo Solutions builds premium websites and scalable web applications for businesses, startups and brands.",
+
+    "CARD1": {
+      "BADGE": "LIMITED OFFER",
+      "TITLE": "Presentation Websites",
+      "DESCRIPTION": "Modern business websites and landing pages designed to attract clients.",
+      "FEATURE1": "Responsive design",
+      "FEATURE2": "Up to 5 pages",
+      "FEATURE3": "Contact forms",
+      "FEATURE4": "SEO optimized",
+      "FEATURE5": "Fast loading speed",
+      "OLD_PRICE": "Starting at €300",
+      "PRICE": "€200",
+      "OFFER": "limited",
+      "BUTTON": "Learn More"
+    },
+
+    "CARD2": {
+      "BADGE": "MOST POPULAR",
+      "TITLE": "Business Web Applications",
+      "DESCRIPTION": "Custom systems with backend logic, authentication and database integration.",
+      "FEATURE1": "Admin dashboards",
+      "FEATURE2": "Authentication system",
+      "FEATURE3": "Database integration",
+      "FEATURE4": "API development",
+      "FEATURE5": "Scalable architecture",
+      "PRICE": "From €800",
+      "BUTTON": "Learn More"
+    },
+
+    "CARD3": {
+      "TITLE": "E-Commerce & SaaS Platforms",
+      "DESCRIPTION": "Full-featured online stores and SaaS platforms for scaling and automation.",
+      "FEATURE1": "Payment integration",
+      "FEATURE2": "User accounts",
+      "FEATURE3": "Subscriptions",
+      "FEATURE4": "Product management",
+      "FEATURE5": "Analytics & optimization",
+      "PRICE": "From €1500",
+      "BUTTON": "Learn More"
+    }
+  },
+  "PROJECTS": {
+    "SUBTITLE": "Selected work",
+    "TITLE": "Projects that feel alive.",
+    "DESCRIPTION": "A collection of live demos, concept websites and real digital experiences.",
+
+    "PROJECT1": {
+      "TITLE": "Piccolo Cafe",
+      "STATUS": "LIVE",
+      "DESCRIPTION": "Elegant modern website built for a local cafe business."
+    },
+
+    "PROJECT2": {
+      "TITLE": "E-commerce - Honey Shop",
+      "DESCRIPTION": "Premium e-commerce concept for natural products."
+    },
+
+    "PROJECT3": {
+      "TITLE": "Beauty Studio Dashboard",
+      "DESCRIPTION": "Modern dashboard interface designed for startup environments."
+    },
+
+    "VISIT": "Visit website"
+  },
+  "ABOUT": {
+    "SUBTITLE": "About Echo Solutions",
+    "TITLE": "We build premium web experiences with modern technologies.",
+    "DESCRIPTION_1": "Echo Solutions focuses on creating responsive, high-performance and visually polished web applications for startups, local businesses and modern brands.",
+    "DESCRIPTION_2": "From frontend interfaces in Angular and React to scalable full-stack systems, every project is built with performance, usability and clean design in mind.",
+    "TRUST_LINE": "✔ We build everything from scratch — no templates, no WordPress",
+
+    "WHY_TITLE": "Why choose us?",
+
+    "FEATURE1_TITLE": "Modern Design",
+    "FEATURE1_DESC": "Premium interfaces with smooth interactions and responsive layouts.",
+
+    "FEATURE2_TITLE": "Optimized Performance",
+    "FEATURE2_DESC": "Fast-loading websites with clean architecture and excellent Lighthouse scores.",
+
+    "FEATURE3_TITLE": "Scalable Development",
+    "FEATURE3_DESC": "Built using modern frameworks and scalable technologies."
+  },
+   "CONTACT": {
+    "SUBTITLE": "Let’s build something",
+    "TITLE": "Ready to launch your next website?",
+    "DESCRIPTION": "Tell us about your idea and we’ll turn it into a modern, fast and high-performing web experience.",
+    "BUTTON": "Contact Echo Solutions",
+
+    "MODAL_TITLE": "Contact",
+
+    "NAME": "Your name",
+    "EMAIL": "Your email",
+    "SELECT_TYPE": "Select inquiry type",
+    "TYPE1": "Question",
+    "TYPE2": "Business Inquiry",
+    "TYPE3": "Need a Website",
+    "TYPE4": "SaaS / App",
+    "TYPE5": "Job / Collaboration",
+    "MESSAGE": "Message",
+
+    "SEND": "Send Message",
+    "SENDING": "Sending...",
+
+    "SUCCESS_TITLE": "Message Sent Successfully",
+    "SUCCESS_DESC": "We’ll get back to you as soon as possible."
+  },
+  "FOOTER": {
+    "FOLLOW_TITLE": "Follow Echo Solutions",
+    "FOLLOW_DESC": "Stay connected with us on social media",
+
+    "COPYRIGHT": "© 2026 Echo Solutions",
+    "RIGHTS": "All rights reserved",
+    "LOCATION": "Niš, Serbia",
+
+    "HOME": "Home",
+    "SERVICES": "Services",
+    "PROJECTS": "Projects",
+    "ABOUT": "About",
+    "CONTACT": "Contact"
+  }
+
+
+}

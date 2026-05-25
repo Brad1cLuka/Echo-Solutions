@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, TranslateModule],
   templateUrl: './contact.html',
   styleUrls: ['./contact.scss']
 })
@@ -15,6 +16,8 @@ export class Contact {
   loading = false;
   success = false;
 
+  constructor(public translate: TranslateService) {}
+
   openContactModal() {
     this.contactOpen = true;
   }
@@ -23,35 +26,29 @@ export class Contact {
     this.contactOpen = false;
   }
 
-  sendMessage(form: any) {
+  closeSuccess() {
+    this.success = false;
+  }
 
+  sendMessage(form: any) {
     if (form.invalid) return;
 
     this.loading = true;
 
-    // Formspree submit trigger (manual POST)
     fetch('https://formspree.io/f/xdajengp', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(form.value)
-    }).then(() => {
-
+    })
+    .then(() => {
       this.loading = false;
       this.contactOpen = false;
       this.success = true;
       form.reset();
-
-    }).catch(() => {
-
+    })
+    .catch(() => {
       this.loading = false;
       alert('Error sending message');
-
     });
-  }
-
-  closeSuccess() {
-    this.success = false;
   }
 }

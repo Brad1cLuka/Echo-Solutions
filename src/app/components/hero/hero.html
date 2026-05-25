@@ -13,21 +13,21 @@
     >
 
       <p class="text-cyan-400 mb-4 text-base sm:text-lg">
-        Modern Web Development
+        {{ 'HERO.TAGLINE' | translate }}
       </p>
 
       <h1 class="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight mb-6">
-        We build <br>
-        modern digital <br>
-        experiences.
+        {{ 'HERO.TITLE_LINE1' | translate }} <br>
+        {{ 'HERO.TITLE_LINE2' | translate }} <br>
+        {{ 'HERO.TITLE_LINE3' | translate }}
       </h1>
 
       <p class="text-gray-400 text-base sm:text-lg leading-relaxed mb-6 max-w-xl mx-auto lg:mx-0">
-        Echo Solutions creates high-performance websites and full-stack web applications for modern businesses and startups.
+        {{ 'HERO.DESCRIPTION' | translate }}
       </p>
 
       <p class="text-gray-400 text-base sm:text-lg leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0">
-        100% Custom Code • No Templates • No WordPress
+        {{ 'HERO.SUBTEXT' | translate }}
       </p>
 
       <!-- BUTTONS -->
@@ -37,14 +37,14 @@
           href="#projects"
           class="bg-cyan-400 text-black px-8 py-4 rounded-full font-semibold hover:scale-105 transition duration-300 text-center"
         >
-          View Projects
+          {{ 'HERO.BUTTON_PROJECTS' | translate }}
         </a>
 
         <a
           href="#contact"
           class="border border-white/20 px-8 py-4 rounded-full hover:bg-white/10 transition duration-300 text-center"
         >
-          Contact
+          {{ 'HERO.BUTTON_CONTACT' | translate }}
         </a>
 
       </div>
