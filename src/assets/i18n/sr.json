@@ -8,10 +8,10 @@
   },
   "HERO": {
     "TAGLINE": "Savremeni web development",
-    "TITLE_LINE1": "Pravimo",
-    "TITLE_LINE2": "moderna digitalna",
-    "TITLE_LINE3": "iskustva.",
-    "DESCRIPTION": "Echo Solutions pravi visokoperformantne sajtove i full-stack web aplikacije za moderne biznise i startape.",
+    "TITLE_LINE1": "Pretvaramo ideje",
+    "TITLE_LINE2": "u moderne web",
+    "TITLE_LINE3": "proizvode.",
+    "DESCRIPTION": "Echo Solutions pomaže kompanijama i startupima da izgrade profesionalno online prisustvo kroz brze i pouzdane web aplikacije i sajtove.",
     "SUBTEXT": "100% unikatni kod • Bez template-a • Bez WordPress-a",
     "BUTTON_PROJECTS": "Pogledaj projekte",
     "BUTTON_CONTACT": "Kontakt"
@@ -20,9 +20,9 @@
 
   "SERVICES": {
     "SUBTITLE": "Naše usluge",
-    "TITLE_LINE1": "Web rešenja dizajnirana",
-    "TITLE_LINE2": "za rast i kredibilitet.",
-    "DESCRIPTION": "Echo Solutions pravi premium sajtove i skalabilne web aplikacije za biznise, startape i brendove.",
+    "TITLE_LINE1": "Web rešenja koja pomažu",
+    "TITLE_LINE2": "vašem biznisu da raste.",
+    "DESCRIPTION": "Echo Solutions razvija moderne sajtove i web aplikacije za kompanije, startape i brendove koji žele profesionalno online prisustvo.",
 
     "CARD1": {
       "BADGE": "OGRANIČENA PONUDA",
@@ -66,50 +66,50 @@
   },
   "PROJECTS": {
     "SUBTITLE": "Izabrani radovi",
-    "TITLE": "Projekti koji odišu životom.",
-    "DESCRIPTION": "Kolekcija live demo sajtova, koncepta i realnih digitalnih rešenja.",
+    "TITLE": "Projekti koje smo dizajnirali i razvili.",
+    "DESCRIPTION": "Pregled sajtova, web aplikacija i digitalnih proizvoda kreiranih za različite delatnosti i potrebe klijenata.",
 
     "PROJECT1": {
       "TITLE": "Piccolo Cafe",
       "STATUS": "LIVE",
-      "DESCRIPTION": "Elegantni moderni sajt razvijen za lokalni kafić."
+      "DESCRIPTION": "Moderan prezentacioni sajt razvijen za lokalni kafić, sa fokusom na vizuelni identitet i predstavljanje ponude."
     },
 
     "PROJECT2": {
       "TITLE": "E-commerce - Honey Shop",
-      "DESCRIPTION": "Premium e-commerce koncept za prirodne proizvode."
+      "DESCRIPTION": "Koncept online prodavnice za prodaju meda sa fokusom na jednostavnu kupovinu i pregled proizvoda."
     },
 
     "PROJECT3": {
       "TITLE": "Beauty Studio Dashboard",
-      "DESCRIPTION": "Moderna dashboard aplikacija za startup okruženje."
+      "DESCRIPTION": "SaaS platforma za upravljanje kozmetičkim salonima sa zakazivanjem termina, evidencijom klijenata, usluga i poslovnom analitikom."
     },
 
     "VISIT": "Poseti sajt"
   },
    "ABOUT": {
     "SUBTITLE": "O kompaniji",
-    "TITLE": "Gradimo premium web iskustva sa modernim tehnologijama.",
-    "DESCRIPTION_1": "Echo Solutions se fokusira na izradu responzivnih, visokoperformantnih i vizuelno čistih web aplikacija za startape, lokalne biznise i moderne brendove.",
-    "DESCRIPTION_2": "Od frontend interfejsa u Angularu i Reactu do skalabilnih full-stack sistema, svaki projekat je građen sa fokusom na performanse, upotrebljivost i čist dizajn.",
-    "TRUST_LINE": "✔ Sve radimo od nule — bez template-a, bez WordPress-a",
+    "TITLE": "Kreiramo moderne sajtove i web aplikacije sa fokusom na performanse.",
+    "DESCRIPTION_1": "Echo Solutions razvija brza, responzivna i profesionalno dizajnirana web rešenja za startape, lokalne firme i rastuće brendove.",
+    "DESCRIPTION_2": "Od Angular i React frontend aplikacija do kompleksnih full-stack sistema, svaki projekat gradimo sa fokusom na pouzdanost, funkcionalnost i dugoročnu održivost.",
+    "TRUST_LINE": "✔ Sve razvijamo od nule — bez šablona i bez WordPress-a",
 
     "WHY_TITLE": "Zašto baš mi?",
 
     "FEATURE1_TITLE": "Moderan dizajn",
-    "FEATURE1_DESC": "Premium interfejsi sa glatkim animacijama i responzivnim layout-om.",
+    "FEATURE1_DESC": "Čist i profesionalan dizajn koji ostavlja snažan prvi utisak.",
 
     "FEATURE2_TITLE": "Optimizovane performanse",
-    "FEATURE2_DESC": "Brzi sajtovi sa čistom arhitekturom i visokim Lighthouse skorom.",
+    "FEATURE2_DESC": "Brzi i optimizovani sajtovi sa fokusom na korisničko iskustvo i SEO.",
 
     "FEATURE3_TITLE": "Skalabilan razvoj",
-    "FEATURE3_DESC": "Korišćenje modernih framework-a i arhitektura spremnih za rast."
+    "FEATURE3_DESC": "Moderna arhitektura i tehnologije koje mogu da prate rast vašeg poslovanja."
   },
   "CONTACT": {
-    "SUBTITLE": "Hajde da stvaramo zajedno",
-    "TITLE": "Spremni da pokrenete sopstveni sajt?",
-    "DESCRIPTION": "Recite nam svoju ideju i pomoći ćemo vam da je pretvorite u moderan i brz web proizvod.",
-    "BUTTON": "Kontaktiraj Echo Solutions",
+    "SUBTITLE": "Hajde da realizujemo vašu ideju",
+    "TITLE": "Spremni za svoj novi sajt?",
+    "DESCRIPTION": "Podelite sa nama svoju ideju, a mi ćemo je pretvoriti u moderan, brz i profesionalan web sajt ili aplikaciju.",
+    "BUTTON": "Kontaktirajte nas",
 
     "MODAL_TITLE": "Kontakt",
 
@@ -130,8 +130,8 @@
     "SUCCESS_DESC": "Javićemo vam se u najkraćem mogućem roku."
   },
     "FOOTER": {
-    "FOLLOW_TITLE": "Zapratite Echo Solutions",
-    "FOLLOW_DESC": "Budite u toku sa nama na društvenim mrežama",
+    "FOLLOW_TITLE": "Pratite nas",
+    "FOLLOW_DESC": "Zapratite Echo Solutions na društvenim mrežama",
 
     "COPYRIGHT": "© 2026 Echo Solutions",
     "RIGHTS": "Sva prava zadržana",

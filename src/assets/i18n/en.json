@@ -66,44 +66,44 @@
   },
   "PROJECTS": {
     "SUBTITLE": "Selected work",
-    "TITLE": "Projects that feel alive.",
-    "DESCRIPTION": "A collection of live demos, concept websites and real digital experiences.",
+    "TITLE": "Projects we've designed and developed.",
+    "DESCRIPTION": "A showcase of websites, web applications and digital products built for different industries and use cases.",
 
     "PROJECT1": {
       "TITLE": "Piccolo Cafe",
       "STATUS": "LIVE",
-      "DESCRIPTION": "Elegant modern website built for a local cafe business."
+      "DESCRIPTION": "Modern presentation website developed for a local cafe, focused on visual identity and customer engagement."
     },
 
     "PROJECT2": {
       "TITLE": "E-commerce - Honey Shop",
-      "DESCRIPTION": "Premium e-commerce concept for natural products."
+      "DESCRIPTION": "E-commerce store concept designed for online honey sales, featuring product management and a streamlined shopping experience."
     },
 
     "PROJECT3": {
       "TITLE": "Beauty Studio Dashboard",
-      "DESCRIPTION": "Modern dashboard interface designed for startup environments."
+      "DESCRIPTION": "SaaS management dashboard for beauty studios featuring appointment scheduling, client management, revenue tracking and business analytics."
     },
 
     "VISIT": "Visit website"
   },
   "ABOUT": {
     "SUBTITLE": "About Echo Solutions",
-    "TITLE": "We build premium web experiences with modern technologies.",
-    "DESCRIPTION_1": "Echo Solutions focuses on creating responsive, high-performance and visually polished web applications for startups, local businesses and modern brands.",
-    "DESCRIPTION_2": "From frontend interfaces in Angular and React to scalable full-stack systems, every project is built with performance, usability and clean design in mind.",
-    "TRUST_LINE": "✔ We build everything from scratch — no templates, no WordPress",
+    "TITLE": "We create modern websites and web applications built for performance.",
+    "DESCRIPTION_1": "Echo Solutions specializes in developing fast, responsive and professionally designed web solutions for startups, local businesses and growing brands.",
+    "DESCRIPTION_2": "From Angular and React frontends to full-stack applications with custom backend systems, every project is built with reliability, usability and long-term scalability in mind.",
+    "TRUST_LINE": "✔ Everything is built from scratch — no templates, no WordPress",
 
     "WHY_TITLE": "Why choose us?",
 
     "FEATURE1_TITLE": "Modern Design",
-    "FEATURE1_DESC": "Premium interfaces with smooth interactions and responsive layouts.",
+    "FEATURE1_DESC": "Clean, professional interfaces designed to leave a strong first impression.",
 
     "FEATURE2_TITLE": "Optimized Performance",
-    "FEATURE2_DESC": "Fast-loading websites with clean architecture and excellent Lighthouse scores.",
+    "FEATURE2_DESC": "Fast-loading websites built with performance, SEO and user experience in mind.",
 
     "FEATURE3_TITLE": "Scalable Development",
-    "FEATURE3_DESC": "Built using modern frameworks and scalable technologies."
+    "FEATURE3_DESC": "Modern technologies and architecture that can grow alongside your business."
   },
    "CONTACT": {
     "SUBTITLE": "Let’s build something",
