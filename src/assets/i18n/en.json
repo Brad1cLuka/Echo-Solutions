@@ -62,7 +62,25 @@
       "FEATURE5": "Analytics & optimization",
       "PRICE": "From €1500",
       "BUTTON": "Learn More"
-    }
+    },
+   "MODAL": {
+  "BUTTON": "Contact us"
+},
+
+"MODAL1": {
+  "TITLE": "Presentation Websites",
+  "DESCRIPTION": "We build modern, visually strong presentation websites that clearly communicate your value. Focused on design, speed, and turning visitors into clients across all devices."
+},
+
+"MODAL2": {
+  "TITLE": "E-commerce Solutions",
+  "DESCRIPTION": "We develop online stores that are more than just product catalogs — they are complete sales systems optimized for fast purchasing, easy management, and maximum conversions."
+},
+
+"MODAL3": {
+  "TITLE": "SaaS Platforms & Applications",
+  "DESCRIPTION": "We build scalable SaaS platforms and web applications focused on performance, security, and user experience. From idea to production, we turn complex systems into simple digital products."
+}
   },
   "PROJECTS": {
     "SUBTITLE": "Selected work",

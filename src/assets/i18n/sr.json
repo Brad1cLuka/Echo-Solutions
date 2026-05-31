@@ -62,7 +62,25 @@
       "FEATURE5": "Analitika i optimizacija",
       "PRICE": "Od €1500",
       "BUTTON": "Saznaj više"
-    }
+    },
+   "MODAL": {
+  "BUTTON": "Kontaktirajte nas"
+},
+
+"MODAL1": {
+  "TITLE": "Prezentacioni web sajtovi",
+  "DESCRIPTION": "Kreiramo moderne, vizuelno snažne prezentacione sajtove koji jasno komuniciraju vašu vrednost. Fokus je na dizajnu, brzini i konverziji posetilaca u klijente, uz savršen prikaz brenda na svim uređajima."
+},
+
+"MODAL2": {
+  "TITLE": "E-commerce rešenja",
+  "DESCRIPTION": "Razvijamo online prodavnice koje nisu samo katalog proizvoda, već kompletan prodajni sistem. Optimizovane za brze kupovine, jednostavno upravljanje i maksimalnu prodaju bez komplikacija."
+},
+
+"MODAL3": {
+  "TITLE": "SaaS platforme i aplikacije",
+  "DESCRIPTION": "Gradimo skalabilne SaaS platforme i web aplikacije sa fokusom na performanse, sigurnost i korisničko iskustvo. Od ideje do produkcije — pretvaramo kompleksne sisteme u jednostavne digitalne proizvode."
+}
   },
   "PROJECTS": {
     "SUBTITLE": "Izabrani radovi",

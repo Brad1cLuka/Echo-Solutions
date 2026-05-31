@@ -9,4 +9,24 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './services.html',
   styleUrl: './services.scss',
 })
-export class Services {}
+export class Services {
+
+  activeModal: number | null = null;
+
+  openModal(id: number) {
+    this.activeModal = id;
+  }
+
+  closeModal() {
+    this.activeModal = null;
+  }
+
+  goToContact() {
+    this.closeModal();
+
+    setTimeout(() => {
+      document.getElementById('contact')
+        ?.scrollIntoView({ behavior: 'smooth' });
+    }, 0);
+  }
+}
