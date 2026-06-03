@@ -4,7 +4,9 @@
 
   <div class="max-w-7xl mx-auto relative z-10">
 
-    <div class="mb-16">
+    <!-- HEADER -->
+    <div class="mb-16" data-aos="fade-up">
+
       <p class="text-cyan-400 mb-3 text-lg">
         {{ 'SERVICES.SUBTITLE' | translate }}
       </p>
@@ -17,12 +19,16 @@
       <p class="text-gray-400 max-w-2xl text-lg leading-relaxed">
         {{ 'SERVICES.DESCRIPTION' | translate }}
       </p>
+
     </div>
 
     <div class="grid lg:grid-cols-3 gap-8">
 
       <!-- CARD 1 -->
-      <div class="group rounded-3xl border border-cyan-400/20 bg-white/[0.03] p-8 hover:bg-white/[0.06] transition duration-300 hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(34,211,238,0.12)] relative overflow-hidden">
+      <div
+        class="group rounded-3xl border border-cyan-400/20 bg-white/[0.03] p-8 hover:bg-white/[0.06] transition duration-300 hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(34,211,238,0.12)] relative overflow-hidden"
+        data-aos="fade-right"
+      >
 
         <div class="absolute top-0 right-0 bg-cyan-400 text-black px-5 py-2 text-xs font-bold rounded-bl-2xl shadow-lg">
           {{ 'SERVICES.CARD1.BADGE' | translate }}
@@ -48,6 +54,7 @@
           <li>✔ {{ 'SERVICES.CARD1.FEATURE5' | translate }}</li>
         </ul>
 
+        <!--
         <div class="mb-6">
           <p class="text-gray-500 line-through text-lg mb-1">
             {{ 'SERVICES.CARD1.OLD_PRICE' | translate }}
@@ -62,17 +69,23 @@
             </span>
           </div>
         </div>
+        -->
 
         <button
           (click)="openModal(1)"
-          class="w-full border border-cyan-400/20 text-cyan-300 py-3 rounded-2xl hover:bg-cyan-400 hover:text-black transition duration-300">
-          {{ 'SERVICES.CARD1.BUTTON' | translate }}
+          class="w-full border border-cyan-400/20 text-cyan-300 py-3 rounded-2xl hover:bg-cyan-400 hover:text-black transition duration-300"
+        >
+          Saznaj više
         </button>
 
       </div>
 
       <!-- CARD 2 -->
-      <div class="group rounded-3xl border border-cyan-400/20 bg-cyan-400/[0.04] p-8 hover:bg-cyan-400/[0.06] transition duration-300 hover:-translate-y-2 hover:shadow-[0_0_50px_rgba(34,211,238,0.18)] relative overflow-hidden">
+      <div
+        class="group rounded-3xl border border-cyan-400/20 bg-cyan-400/[0.04] p-8 hover:bg-cyan-400/[0.06] transition duration-300 hover:-translate-y-2 hover:shadow-[0_0_50px_rgba(34,211,238,0.18)] relative overflow-hidden"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
 
         <div class="absolute top-0 right-0 px-4 py-2 bg-cyan-400 text-black text-xs font-bold rounded-bl-2xl">
           {{ 'SERVICES.CARD2.BADGE' | translate }}
@@ -98,22 +111,28 @@
           <li>✔ {{ 'SERVICES.CARD2.FEATURE5' | translate }}</li>
         </ul>
 
+        <!--
         <div class="mb-6">
           <span class="text-cyan-300 text-4xl font-bold">
             {{ 'SERVICES.CARD2.PRICE' | translate }}
           </span>
         </div>
+        -->
 
         <button
           (click)="openModal(2)"
-          class="w-full border border-cyan-400/20 text-cyan-300 py-3 rounded-2xl hover:bg-cyan-400 hover:text-black transition duration-300">
-          {{ 'SERVICES.CARD2.BUTTON' | translate }}
+          class="w-full border border-cyan-400/20 text-cyan-300 py-3 rounded-2xl hover:bg-cyan-400 hover:text-black transition duration-300"
+        >
+          Saznaj više
         </button>
 
       </div>
 
       <!-- CARD 3 -->
-      <div class="group rounded-3xl border border-white/10 bg-white/[0.03] p-8 hover:bg-white/[0.06] transition duration-300 hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(34,211,238,0.12)]">
+      <div
+        class="group rounded-3xl border border-white/10 bg-white/[0.03] p-8 hover:bg-white/[0.06] transition duration-300 hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(34,211,238,0.12)]"
+        data-aos="fade-left"
+      >
 
         <div class="w-14 h-14 rounded-2xl bg-cyan-400/10 flex items-center justify-center mb-6 text-cyan-300 text-2xl">
           ◎
@@ -135,16 +154,19 @@
           <li>✔ {{ 'SERVICES.CARD3.FEATURE5' | translate }}</li>
         </ul>
 
+        <!--
         <div class="mb-6">
           <span class="text-cyan-300 text-4xl font-bold">
             {{ 'SERVICES.CARD3.PRICE' | translate }}
           </span>
         </div>
+        -->
 
         <button
           (click)="openModal(3)"
-          class="w-full border border-cyan-400/20 text-cyan-300 py-3 rounded-2xl hover:bg-cyan-400 hover:text-black transition duration-300">
-          {{ 'SERVICES.CARD3.BUTTON' | translate }}
+          class="w-full border border-cyan-400/20 text-cyan-300 py-3 rounded-2xl hover:bg-cyan-400 hover:text-black transition duration-300"
+        >
+          Saznaj više
         </button>
 
       </div>
@@ -152,87 +174,3 @@
     </div>
   </div>
 </section>
-
-<!-- MODAL 1 -->
-<div *ngIf="activeModal === 1"
-     class="fixed inset-0 z-[9999] flex items-center justify-center bg-black/70 backdrop-blur-sm">
-
-  <div class="relative bg-[#07111c] border border-cyan-400/20 rounded-3xl max-w-2xl w-[90%] p-8">
-
-    <button (click)="closeModal()"
-      class="absolute top-5 right-5 text-2xl text-gray-400 hover:text-white">
-      ✕
-    </button>
-
-    <h3 class="text-3xl font-bold text-cyan-300 mb-5">
-      {{ 'SERVICES.MODAL1.TITLE' | translate }}
-    </h3>
-
-    <p class="text-gray-300 leading-relaxed mb-8">
-      {{ 'SERVICES.MODAL1.DESCRIPTION' | translate }}
-    </p>
-
-    <button
-      (click)="goToContact()"
-      class="inline-block bg-cyan-400 text-black px-6 py-3 rounded-xl font-semibold hover:bg-cyan-300 transition">
-      {{ 'SERVICES.MODAL.BUTTON' | translate }}
-    </button>
-
-  </div>
-</div>
-
-<!-- MODAL 2 -->
-<div *ngIf="activeModal === 2"
-     class="fixed inset-0 z-[9999] flex items-center justify-center bg-black/70 backdrop-blur-sm">
-
-  <div class="relative bg-[#07111c] border border-cyan-400/20 rounded-3xl max-w-2xl w-[90%] p-8">
-
-    <button (click)="closeModal()"
-      class="absolute top-5 right-5 text-2xl text-gray-400 hover:text-white">
-      ✕
-    </button>
-
-    <h3 class="text-3xl font-bold text-cyan-300 mb-5">
-      {{ 'SERVICES.MODAL2.TITLE' | translate }}
-    </h3>
-
-    <p class="text-gray-300 leading-relaxed mb-8">
-      {{ 'SERVICES.MODAL2.DESCRIPTION' | translate }}
-    </p>
-
-    <button
-      (click)="goToContact()"
-      class="inline-block bg-cyan-400 text-black px-6 py-3 rounded-xl font-semibold hover:bg-cyan-300 transition">
-      {{ 'SERVICES.MODAL.BUTTON' | translate }}
-    </button>
-
-  </div>
-</div>
-
-<!-- MODAL 3 -->
-<div *ngIf="activeModal === 3"
-     class="fixed inset-0 z-[9999] flex items-center justify-center bg-black/70 backdrop-blur-sm">
-
-  <div class="relative bg-[#07111c] border border-cyan-400/20 rounded-3xl max-w-2xl w-[90%] p-8">
-
-    <button (click)="closeModal()"
-      class="absolute top-5 right-5 text-2xl text-gray-400 hover:text-white">
-      ✕
-    </button>
-
-    <h3 class="text-3xl font-bold text-cyan-300 mb-5">
-      {{ 'SERVICES.MODAL3.TITLE' | translate }}
-    </h3>
-
-    <p class="text-gray-300 leading-relaxed mb-8">
-      {{ 'SERVICES.MODAL3.DESCRIPTION' | translate }}
-    </p>
-
-    <button
-      (click)="goToContact()"
-      class="inline-block bg-cyan-400 text-black px-6 py-3 rounded-xl font-semibold hover:bg-cyan-300 transition">
-      {{ 'SERVICES.MODAL.BUTTON' | translate }}
-    </button>
-
-  </div>
-</div>
